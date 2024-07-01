@@ -14,7 +14,7 @@ class Menu extends React.Component {
                     <ul className='navbar-nav mr-auto'>
                         <li className='nav-item'>
                             <button className='nav-link active btn btn-link'>
-                                <img src="logo.png" class="logo" alt=""/>                               
+                                <img src="logo.png" className="logo" alt=""/>                               
                             </button>
                         </li>
                         <li className='nav-item'>
