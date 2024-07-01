@@ -3,7 +3,7 @@ const urlApi = "https://paginas-web-cr.com/ucr/multimedios0224/TeamEMJD";
 
 async function getPost(id) {
     try {
-        return apiFetch("Post", "GET", {id})
+        return await apiFetch("Post", "GET", {id})
     } catch (e) {
         throw new Error("Error al consultar el post")
     }
@@ -11,9 +11,33 @@ async function getPost(id) {
 
 async function getAllPosts() {
     try {
-        return apiFetch("Post", "GET")
+        return await apiFetch("Post", "GET")
     } catch (e) {
         throw new Error("Error al consultar el post")
+    }
+}
+
+async function createPost(data) {
+    try {
+        return await apiFetch("Post", "POST", data)
+    } catch (e) {
+        throw new Error("Error al crear el post")
+    }
+}
+
+async function updatePost(data) {
+    try {
+        return await apiFetch("Post", "PUT", data)
+    } catch (e) {
+        throw new Error("Error al actualizar el post")
+    }
+}
+
+async function deletePost(data) {
+    try {
+        return await apiFetch("Post", "DELETE", data)
+    } catch (e) {
+        throw new Error("Error al actualizar el post")
     }
 }
 
@@ -48,7 +72,10 @@ async function apiFetch(endpoint, method, data = null) {
 const api = {
     Post: {
         get: getPost,
-        getAll: getAllPosts
+        create: createPost,
+        update: updatePost,
+        getAll: getAllPosts,
+        delete: deletePost
     }
 }
 
