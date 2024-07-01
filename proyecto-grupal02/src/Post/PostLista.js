@@ -68,7 +68,7 @@ const PostLista = () => {
             <button className='btn' onClick={() => toggleEditModal(null)}>Crear post</button>
             {posts.map(p => (
                 <div className="cardPost" key={p.idPost}>
-                    <img src="fondo.jpg" className="card-img-top" alt="..."></img>
+                    <img src={p.imagenPost} className="card-img-top" alt="..."></img>
                     <div className="card-body">
                         <h5 className="card-title">{p.tituloPost}</h5>
                         <p className="card-text">{p.textoPost}</p>
