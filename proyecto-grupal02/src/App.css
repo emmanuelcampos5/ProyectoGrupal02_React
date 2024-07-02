@@ -4,8 +4,16 @@ body{
   background-size: cover;
 }
 
+.tituloPagina{
+  background: #ffffff;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
 .card{
-  width: 25rem;
+  width: 26rem;
 }
 
 .botones{
@@ -26,4 +34,13 @@ body{
 .textModel{
   height: 150px;
   margin-bottom: 30px;
+}
+
+.formularioContacto{
+  width: fit-content;
+  background: #ffffff;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 40px;
+  border-radius: 15px;
 }

@@ -6,7 +6,7 @@ class Menu extends React.Component {
     render() {
 
         //creamos las variables para la carga 
-        const { activeComponent, SetActiveComponent } = this.props;
+        const { SetActiveComponent } = this.props;
 
         return (
             <div>
@@ -18,17 +18,20 @@ class Menu extends React.Component {
                             </button>
                         </li>
                         <li className='nav-item'>
-                            <button className='nav-link btn btn-link'>
+                            <button className='nav-link btn btn-link'
+                                onClick={()=> SetActiveComponent('publicacion')}>                               
                                 Publicaciones
                             </button>
                         </li>
                         <li className='nav-item'>
-                            <button className='nav-link btn btn-link'>
+                            <button className='nav-link btn btn-link'
+                                onClick={()=> SetActiveComponent('aboutUs')}>
                                 Sobre Nosotros
                             </button>
                         </li>
                         <li className='nav-item'>
-                            <button className='nav-link btn btn-link'>
+                            <button className='nav-link btn btn-link'
+                                onClick={()=> SetActiveComponent('contacto')}>                             
                                 Contacto
                             </button>
                         </li>                    

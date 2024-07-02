@@ -65,6 +65,9 @@ const PostLista = () => {
     }, [])
     return (
         <div className='row d-flex justify-content-center'>
+            <div className='tituloPagina'>
+                <h1>Noticias Publicadas</h1>
+            </div>
             <div className='d-flex justify-content-end'>
                 <button className='btn btn btn-primary' onClick={() => toggleEditModal(null)}>Crear Publicacion</button>
             </div>

@@ -5,9 +5,6 @@ class Footer extends React.Component {
 
     render() {
 
-        //creamos las variables para la carga 
-        const { activeComponent, SetActiveComponent } = this.props;
-
         return (
             <div>
                 <nav className='navbar navbar-expand-md'>
