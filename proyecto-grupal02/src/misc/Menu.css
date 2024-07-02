@@ -9,12 +9,12 @@
 
 ul{
     align-items: center;
-    font-size: xx-large;
+    font-size: x-large;
     gap: 20px;
 }
 
 .logo{
-    width: 170px;
+    width: 120px;
 }
 
 .navbar button{
