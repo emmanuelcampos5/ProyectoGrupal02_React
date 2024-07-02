@@ -64,16 +64,22 @@ const PostLista = () => {
         fetchPosts()
     }, [])
     return (
-        <div>
-            <button className='btn' onClick={() => toggleEditModal(null)}>Crear post</button>
+        <div className='row d-flex justify-content-center'>
+            <div className='d-flex justify-content-end'>
+                <button className='btn btn btn-primary' onClick={() => toggleEditModal(null)}>Crear Publicacion</button>
+            </div>
             {posts.map(p => (
-                <div className="cardPost" key={p.idPost}>
-                    <img src={p.imagenPost} className="card-img-top" alt="..."></img>
-                    <div className="card-body">
+                <div className="card mb-4" key={p.idPost}>
+                    <img src={p.imagenPost} className="card-img-top mt-3" alt="..."></img>
+                    <div className="card-body d-flex flex-column">
                         <h5 className="card-title">{p.tituloPost}</h5>
-                        <p className="card-text">{p.textoPost}</p>
-                        <button href="#" className="btn btn-primary" onClick={() => toggleEditModal(p)}>Editar</button>
-                        <button href="#" className="btn btn-danger" onClick={() => toggleDeleteModal(p)}>Eliminar</button>
+                        <div className="card-text-container mb-4">
+                            <p className="card-text">{p.textoPost}</p>
+                        </div>
+                        <div className='botones mt-auto'>
+                            <button href="#" className="btn btn-primary" onClick={() => toggleEditModal(p)}>Editar</button>
+                            <button href="#" className="btn btn-danger" onClick={() => toggleDeleteModal(p)}>Eliminar</button>
+                        </div>
                     </div>
                 </div>
             ))}

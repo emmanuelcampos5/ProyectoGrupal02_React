@@ -96,13 +96,13 @@ const PostModal = ({isOpen, toggleModal, onUpdate, postEditar, isEditar}) => {
                 <Form>
                     <FormGroup>
                         <Label for="titulo">Titulo</Label>
-                        <Input required type="text" id="nombre" value={titulo} onChange={(e) => setTitulo(e.target.value)} ></Input>
+                        <Input required type="text" id="nombre" placeholder='Titulo de la publicacion' value={titulo} onChange={(e) => setTitulo(e.target.value)} ></Input>
 
                         <Label for="descripcion">Descripcion</Label>
-                        <Input required type="text" id="descripcion" value={texto} onChange={(e) => setTexto(e.target.value)} ></Input>
+                        <Input required type="text" id="descripcion" placeholder='Descripcion' value={texto} onChange={(e) => setTexto(e.target.value)} ></Input>
 
                         <Label for="imagen">URL Imagen</Label>
-                        <Input required type="text" id="imagen" value={imagen} onChange={(e) => setImagen(e.target.value)} ></Input>                                                                 
+                        <Input required type="text" id="imagen" placeholder='Copiar URL de la imagen' value={imagen} onChange={(e) => setImagen(e.target.value)} ></Input>                                                                 
                     </FormGroup>
                 </Form>
               </ModalBody>
@@ -112,7 +112,7 @@ const PostModal = ({isOpen, toggleModal, onUpdate, postEditar, isEditar}) => {
                     </Button>{' '}
                 <Button color="secondary" onClick={toggleModal} >Cancelar</Button>
             </ModalFooter>
-            </Modal>
+        </Modal>
                 
         
 
