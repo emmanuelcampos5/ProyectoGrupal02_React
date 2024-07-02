@@ -22,3 +22,8 @@ body{
   height: 250px;
   object-fit: cover;
 }
+
+.textModel{
+  height: 150px;
+  margin-bottom: 30px;
+}

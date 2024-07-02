@@ -19,6 +19,11 @@ class Menu extends React.Component {
                         </li>
                         <li className='nav-item'>
                             <button className='nav-link btn btn-link'>
+                                Publicaciones
+                            </button>
+                        </li>
+                        <li className='nav-item'>
+                            <button className='nav-link btn btn-link'>
                                 Sobre Nosotros
                             </button>
                         </li>
